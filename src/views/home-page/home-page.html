@@ -6,190 +6,426 @@
     <title>Davi Borges - Desenvolvedor Full Stack</title>
 
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-eoV5a8/uVZ8QXzq4lHAA//BqzABmMjFtQOpBHpXYzpL9AD2hPzqQMG8t8WSebflD" crossorigin="anonymous"></script>  
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-eoV5a8/uVZ8QXzq4lHAA//BqzABmMjFtQOpBHpXYzpL9AD2hPzqQMG8t8WSebflD"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script async src="dist/index.bundle.js"></script>
   </head>
-  <body class="bg-dark">
-
-    <nav class="navbar fixed-top bg-dark">
+  <body>
+    <nav class="navbar fixed-top">
       <div class="container">
-        <a class="navbar-brand text-light fs-3 fw-bold" href="#daviborges">Davi Borges</a>
-        
-        <div class="navbar">           
+        <a class="navbar-brand text-light fs-3 fw-bold" href="#daviborges"
+          >Davi Borges</a
+        >
+
+        <div class="navbar">
           <a class="navbar-brand btn text-light" href="#sobremim">Sobre Mim</a>
-          <a class="navbar-brand btn text-light" href="#skills">Skills</a>
+          <a class="navbar-brand btn text-light" href="#tecnologias"
+            >Tecnologias</a
+          >
           <a class="navbar-brand btn text-light" href="#servicos">Serviços</a>
           <a class="navbar-brand btn text-light" href="#contato">Contato</a>
         </div>
-
       </div>
     </nav>
 
-    <div class="container pt-5 d-grid col">
-      <!-- Conteúdo da página aqui -->
-
-      <div>
-        <!-- Davi Borges -->
-        <div class="row d-flex gap-3 pt-5" id="daviborges">
-          <div class="col-4 d-flex align-items-center justify-content-center">
-            <img
-              style="max-height: 400px"
-              src="/assets/davi.jpg"
-              class="img-fluid rounded-pill"
-            />
-          </div>
-
-          <div class="col-7 mt-4 text-start fw-semibold">
-            <h1 class="pt-5 text-light">Olá<span class="text-warning">,</span> eu sou 
-              <br><span class="h1 fw-semibold text-warning">Davi Borges</span>
-            </h1>
-            <h1 class="fw-semibold text-light">Sou desenvolvedor Full<span class="text-warning">-</span>Stack<span class="text-warning">.</span></h1>
-            <br><a class="btn btn-warning" data-bs-placement="bottom-end" href="https://github.com/daviborgesfelipe" target="_blank">Visitar GitHub</a>
-          </div>
-        </div>
-
-        <!-- Sobre Mim -->
-        <div class="row d-flex gap-3 justify-content-around" id="sobremim">
-          <div class="mt-4 text-start">
-            <h3 class="fw-semibold text-light">Sobre mim</h3> 
-            <div class="border-bottom border-warning"></div>
-            <p class="fw-200 text-light mt-3">
-              Sou um desenvolvedor Full Stack. Atualmente, minhas linguagens favoritas são, para o back end, uso o C# junto das tecnologias Microsoft, principalmente .NET Core, ASP Net e SQL Server, e para front end, gosto do Angular com TypeScript, Bootstrap e/ou Angular Material. Estou ansioso para contribuir para projetos que impactam positivamente a vida das pessoas e dos negócios por meio da tecnologia.
-            </p>
-          </div>
-          <div class="text-end">
-            <a class="btn btn-warning" data-bs-placement="bottom-end" href="https://www.linkedin.com/in/davi-borges-felipe/" target="_blank">Visitar LinkedIn</a>
-          </div>
-        </div>
-
-        <!-- Skills -->
-        <div class="row d-flex justify-content-around" id="skills">
-          <div class="row mt-5 text-start">
-            <div class="col-6">
-              <div class="row">
-                <div class="col-3 rounded-5">
-                  <img
-                    id="dotnetImage"
-                    style="max-height: 320px"
-                    src="/assets/dotnet.png"
-                    class="img-fluid rounded-pill"
-                  />
-                </div>
-                <div class="col-3 rounded-5">
-                  <img
-                    id="csharpImage"
-                    style="max-height: 320px"
-                    src="/assets/csharp.png"
-                    class="img-fluid rounded-pill"
-                  />
-                </div>
-                <div class="col-3 rounded-5">
-                  <img
-                    id="angularImage"
-                    style="max-height: 320px"
-                    src="/assets/angularlogo.png"
-                    class="img-fluid rounded-pill"
-                  />
-                </div>
-                <div class="col-3 rounded-5">
-                  <img
-                    id="typescriptImage"
-                    style="max-height: 320px"
-                    src="/assets/typescript.png"
-                    class="img-fluid rounded-pill"
-                  />
-                </div>
+    <main>
+      <div class="container pt-5 d-grid col" id="daviborges">
+        <!-- Conteúdo da página aqui -->
+        <div>
+          <!-- Davi Borges -->
+          <section class="d-flex align-items-center justify-content-around">
+            <div class="row d-flex gap-3">
+              <div
+                class="col-3 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  style="max-height: 800px; box-shadow: 6px 3px 6px 3px rgba(89, 100, 67, 0.8);"
+                  src="/assets/davi.jpg"
+                  class="img-fluid rounded-pill"
+                />
               </div>
-              <div class="row mt-5">
-                <div class="col-3 rounded-5">
-                  <img
-                    id="visualstudioImage"
-                    style="max-height: 320px"
-                    src="/assets/visualstudio.png"
-                    class="img-fluid rounded-pill"
-                  />
+
+              <div class="col-8 text-start fw-semibold mt-xxl-5">
+                <h1 class="text-light">
+                  Olá<span class="text-warning">, </span> eu sou <br />
+                  <span class="h1 fw-semibold text-warning">Davi Borges<span class="text-secundary">.</span></span>
+                </h1>
+                <h1 class="fw-semibold text-light">
+                  Sou desenvolvedor Full<span class="text-warning">-</span
+                  >Stack<span class="text-warning">.</span>
+                </h1>
+
+                <br />
+                <div class="row">
+                  <a
+                    class="col-4 btn btn-warning"
+                    data-bs-placement="bottom-end"
+                    href="https://www.linkedin.com/in/davi-borges-felipe/"
+                    target="_blank"
+                    ><i class="bi bi-linkedin text-warning"></i> LinkedIn</a
+                  >
                 </div>
-                <div class="col-3 rounded-5">
-                  <img
-                    id="bootstrapImage"
-                    style="max-height: 320px"
-                    src="/assets/bootstrap.png"
-                    class="img-fluid rounded-pill"
-                  />
-                </div>
-                <div class="col-3 rounded-5">
-                  <img
-                    id="sqlserverImage"
-                    style="max-height: 320px"
-                    src="/assets/sqlserver.png"
-                    class="img-fluid rounded-pill"
-                  />
-                </div>
-                <div class="col-3 rounded-5">
-                  <img
-                    id="githubImage"
-                    style="max-height: 320px"
-                    src="/assets/github.png"
-                    class="img-fluid rounded-pill"
-                  />
+                <br />
+                <div class="row">
+                  <a
+                    class="col-4 btn btn-warning"
+                    data-bs-placement="bottom-end"
+                    href="https://github.com/daviborgesfelipe"
+                    target="_blank"
+                    ><i class="bi bi-github text-warning"></i> GitHub</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="col-6" id="contentContainer">
-              <div class="row ">
-                <div class="col fw-200 text-light">
-                  <h5>C# </h5> 
-                  <div class="border-bottom border-warning"></div>
-                  <p class="mt-3">C# é uma linguagem de programação desenvolvida pela Microsoft, conhecida por sua versatilidade e eficiência. Com foco em segurança e desempenho, C# é amplamente utilizada para desenvolvimento de aplicações modernas e robustas.</p>
+          </section>
+
+          <!-- Sobre Mim -->
+          <section id="sobremim">
+            <div class="row d-flex gap-3 justify-content-around pt-xxl-5">
+              <div class="text-start">
+                <h3 class="fw-semibold text-light">Sobre mim</h3>
+                <div class="border-bottom border-warning"></div>
+                <p class="fw-200 text-light mt-3">
+                  Sou um desenvolvedor
+                  <span class="text-warning">Full Stack.</span> Atualmente, minhas linguagens favoritas são, para o back end, uso o
+                  <span class="text-warning">C#</span> junto das tecnologias
+                  <span class="text-warning">Microsoft</span>, principalmente
+                  <span class="text-warning">.NET Core</span>,
+                  <span class="text-warning">ASP Net</span> e
+                  <span class="text-warning">SQL Server</span>, e para front end, gosto do 
+                  <span class="text-warning">Angular</span> com
+                  <span class="text-warning">TypeScript</span>,
+                  <span class="text-warning">Bootstrap</span> e/ou
+                  <span class="text-warning">Angular Material. </span> Estou
+                  ansioso para contribuir para projetos que impactam
+                  positivamente a vida das pessoas e dos negócios por meio da
+                  tecnologia.
+                </p>
+              </div>
+            </div>
+
+            
+          </section>
+          <!-- Tecnologias -->
+          <section id="tecnologias">
+            <div class="row d-flex gap-3 justify-content-around pt-xxl-5">
+
+              <div>
+                <h3 class="row fw-semibold text-light">Tecnologias</h3>
+                <div class="row border-bottom border-warning"></div>
+              </div>
+              
+              <div class="row text-start">
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-3 rounded-5">
+                      <img
+                      id="dotnetImage"
+                      style="max-height: 320px"
+                      src="/assets/dotnet.png"
+                      class="img-fluid rounded-pill"
+                      />
+                    </div>
+
+                    <div class="col-3 rounded-5">
+                      <img
+                      id="csharpImage"
+                      style="max-height: 320px"
+                      src="/assets/csharp.png"
+                      class="img-fluid rounded-pill"
+                      />
+                    </div>
+                    
+                    <div class="col-3 rounded-5">
+                      <img
+                      id="angularImage"
+                      style="max-height: 320px"
+                      src="/assets/angularlogo.png"
+                      class="img-fluid rounded-pill"
+                      />
+                    </div>
+                    
+                    <div class="col-3 rounded-5">
+                      <img
+                      id="typescriptImage"
+                      style="max-height: 320px"
+                      src="/assets/typescript.png"
+                      class="img-fluid rounded-pill"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="row mt-5">
+                  <div class="col-3 rounded-5">
+                    <img
+                      id="visualstudioImage"
+                      style="max-height: 320px"
+                      src="/assets/visualstudio.png"
+                      class="img-fluid rounded-pill"
+                      />
+                    </div>
+                    
+                    <div class="col-3 rounded-5">
+                      <img
+                      id="bootstrapImage"
+                      style="max-height: 320px"
+                      src="/assets/bootstrap.png"
+                      class="img-fluid rounded-pill"
+                      />
+                    </div>
+                    
+                    <div class="col-3 rounded-5">
+                      <img
+                      id="sqlserverImage"
+                      style="max-height: 320px"
+                      src="/assets/sqlserver.png"
+                      class="img-fluid rounded-pill"
+                      />
+                    </div>
+                    
+                    <div class="col-3 rounded-5">
+                      <img
+                      id="githubImage"
+                      style="max-height: 320px"
+                      src="/assets/github.png"
+                      class="img-fluid rounded-pill"
+                      />
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-6" id="contentContainer">
+                  <div class="row">
+                    <div class="col fw-200 text-light">
+                      <h5>C#</h5>
+                      <div class="border-bottom border-warning"></div>
+                      <p class="mt-3">
+                        C# é uma linguagem de programação desenvolvida pela
+                        Microsoft, conhecida por sua versatilidade e eficiência.
+                        Com foco em segurança e desempenho, C# é amplamente
+                        utilizada para desenvolvimento de aplicações modernas e
+                        robustas.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              
+            </div>
+          </section>
+
+          <!-- Serviços -->
+          <section id="servicos">
+
+            <div class="row d-flex justify-content-around mt-5 text-start">
+              <div class="col-6">
+                <h3 class="fw-semibold text-light">Serviços</h3>
+                <div class="border-bottom border-warning"></div>
+                <p class="fw-200 text-light mt-3">
+                  Se você precisa de alguém para desenvolver um aplicativo, site
+                  pessoal, comercial ou até mesmo uma simples landing page, você
+                  está no lugar certo!
+                </p>
+                <p class="fw-200 text-light mt-3">
+                  Realizo as entregas dos projetos através do Github em um
+                  repositório privado ou público, com o intuito de manter o
+                  código sempre versionado, facilitando o processo de controle
+                  de histórico.
+                </p>
+              </div>
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-6 fw-200 text-light">
+                    <i class="bi bi-code ms-0 fs-3 text-warning mt-0"></i>
+                    <h5>Desenvolvimento<span class="text-warning">.</span></h5>
+                    <p>
+                      Desenvolvimento de projetos end-to-end, criando API's no
+                      padrão REST e criando websites dinâmicos ou estáticos.
+                    </p>
+                  </div>
+
+                  <div class="col-6 fw-200 text-light">
+                    <i class="bi bi-display ms-0 fs-3 text-warning"></i>
+                    <h5>
+                      Responsividade Amigável<span class="text-warning">.</span>
+                    </h5>
+                    <p>
+                      Design responsivo tornando seu site acessível,
+                      independentemente do dispositivo.
+                    </p>
+                  </div>
+
+                  <div class="col fw-200 text-light">
+                    <i class="bi bi-stars fs-3 text-warning"></i>
+                    <h5>Clean code<span class="text-warning">.</span></h5>
+                    <p>
+                      Desenvolvimento seguindo os principais design patterns,
+                      com o objetivo de tornar o código mais intuitivo, elegante
+                      e com fácil manutenção.
+                    </p>
+                  </div>
+
+                  <div class="row fw-200 text-light">
+                    <i class="bi bi-tools ms-0 fs-3 text-warning mt-0"></i>
+                    <h5>
+                      Desenvolvimento orientado por testes (TDD)<span
+                        class="text-warning"
+                        >.</span
+                      >
+                    </h5>
+                    <p>
+                      Implementação de funcionalidades com base em testes,
+                      garantindo uma abordagem mais segura e robusta no
+                      desenvolvimento de software.
+                    </p>
+                  </div>
+
+                  <div class="row fw-200 text-light">
+                    <i class="bi bi-diagram-2 ms-0 fs-3 text-warning mt-0"></i>
+                    <h5>
+                      Design Driven Development (DDD)<span class="text-warning"
+                        >.</span
+                      >
+                    </h5>
+                    <p>
+                      Abordagem de desenvolvimento que prioriza a modelagem de
+                      domínio, criando um código alinhado com a lógica de
+                      negócios da aplicação.
+                    </p>
+                  </div>
+
+                  <div class="col-6 fw-200 text-light">
+                    <i
+                      class="bi bi-check-square ms-0 fs-3 text-warning mt-0"
+                    ></i>
+                    <h5>Testes Unitários<span class="text-warning">.</span></h5>
+                    <p>
+                      Implementação de testes para verificar se unidades
+                      individuais do código funcionam conforme o esperado,
+                      garantindo a confiabilidade do sistema.
+                    </p>
+                  </div>
+
+                  <div class="col fw-200 text-light">
+                    <i class="bi bi-link-45deg ms-0 fs-3 text-warning mt-0"></i>
+                    <h5>
+                      Testes de Integração<span class="text-warning">.</span>
+                    </h5>
+                    <p>
+                      Verificação da interação entre diferentes partes do
+                      sistema, garantindo o bom funcionamento das integrações.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </section>
+          <section>
 
-        <!-- Serviços -->
-        <div class="row d-flex justify-content-around" id="servicos">
-          <div class="row mt-5 text-start">
-            <div class="col-6">
-              <h3 class="fw-semibold text-light">Serviços</h3> 
-              <div class="border-bottom border-warning"></div>
-              <p class="fw-200 text-light mt-3">
-                Se você precisa de alguém para desenvolver um aplicativo, site pessoal, comercial ou até mesmo uma simples landing page, você está no lugar certo!
+
+            <h3 class="fw-semibold text-light">E-Agenda Medica</h3>
+            <div class="border-bottom border-warning mb-4"></div>
+
+            <div class="row">
+              <i
+                class="bi bi-info-circle ms-0 fs-5 text-warning mt-0"
+              > Info</i>
+              <h5 class="text-secondary mt-xl-3">Descrição<span class="text-warning">:</span></h5>
+              <p class="text-light fs-6 mb-xl-5 mt-xl-3">
+                Desenvolvimento de um aplicativo web para eficiente gestão do cronograma de atividades em clínicas médicas. Recursos chave incluem agendamento de cirurgias e consultas, identificação única de médicos via CRM, definição de horários, automação de períodos de recuperação, e flexibilidade para eventos passados ou futuros, com opções de modificação e exclusão. Funcionalidades adicionais abrangem alertas de conflitos de horários para o mesmo médico e uma lista dos 10 médicos mais ativos em determinado período.
               </p>
-              <p class="fw-200 text-light mt-3">
-                Realizo as entregas dos projetos através do Github em um repositório privado ou público, com o intuito de manter o código sempre versionado, facilitando o processo de controle de histórico.
+
+              <h5 class="text-secondary mt-xl-3">Tecnologias Utilizadas<span class="text-warning">:</span></h5>
+              <p class="text-light fs-6 mb-xl-5 mt-xl-3">
+                O E-Agenda Médica é uma aplicação moderna com Angular no frontend para criar SPAs responsivas. No backend, utiliza ASP.NET Core Web API e Entity Framework Core para operações eficientes no banco de dados. Adota práticas modernas, frameworks como FluentValidation garantem integridade e transparência, e é organizado para facilitar manutenção e expansão. Este projeto representa a convergência de tecnologias avançadas, proporcionando uma solução eficaz e moderna para a gestão de cronograma em clínicas médicas.
               </p>
             </div>
-            <div class="col-6">
-              <div class="row ">
-                <div class="col-6 fw-200 text-light">
-                  <i class="bi bi-code ms-0 fs-3 text-warning mt-0"></i>
-                  <h5>Desenvolvimento<span class="text-warning">.</span></h5> 
-                  <p>Desenvolvimento de projetos end-to-end, criando API's no padrão REST e criando websites dinâmicos ou estáticos.</p>
-                </div>
-                <div class="col-6 fw-200 text-light">
-                  <i class="bi bi-display ms-0 fs-3 text-warning"></i>
-                  <h5>Responsividade Amigável<span class="text-warning">.</span></h5>
-                  <p>Design responsivo tornando seu site acessível, independentemente do dispositivo.</p>
-                </div>
-                <div class="col fw-200 text-light">
-                  <i class="bi bi-stars fs-3 text-warning"></i>
-                  <h5>Clean code<span class="text-warning">.</span></h5>
-                  <p>Desenvolvimento seguindo os principais design patterns, com o objetivo de tornar o código mais intuitivo, elegante e com fácil manutenção.</p>
-                </div>
+            <div class="container d-flex justify-content-around gap-3">
+              <div class="device">
+                  <!-- Captura de tela da versão mobile -->
+                  <img class="screenshot img-fluid h-auto" src="/assets/mobile.png" alt="Versão Mobile">
+              </div>
+          
+              <div class="desktop">
+                  <!-- Captura de tela da versão desktop -->
+                  <img class="screenshot img-fluid" src="/assets/fullhd.png" alt="Versão Desktop">
               </div>
             </div>
-          </div>
-        </div>
 
-        <!-- Contatos -->
+            <br />
+            <div class="col d-flex justify-content-around">
+              <a
+                class="col-4 btn btn-warning"
+                data-bs-placement="bottom-end"
+                href="https://github.com/daviborgesfelipe/e-AgendaMedica.Server"
+                target="_blank"
+                ><i class="bi bi-github text-warning shadow-lg"></i> Back-end</a
+              >
+              <a
+              class="col-4 btn btn-warning"
+              data-bs-placement="bottom-end"
+              href="https://github.com/daviborgesfelipe/e-agenda-medica-client"
+              target="_blank"
+              ><i class="bi bi-github text-warning shadow-lg"></i> Front-end</a
+              >
+            </div>
+
+          </section>
+        </div>
       </div>
-    </div>
-    <footer class="mt-4">
-      <!-- Conteúdo do rodapé aqui -->
+    </main>
+
+    <footer class="footer-basic mt-5" id="contato">
+      <div  id="contato">
+        <div class="social">
+          <a href="https://github.com/daviborgesfelipe" target="_blank"
+            ><i class="text-dark bi bi-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/davi-borges-felipe/"
+            target="_blank"
+            ><i class="text-dark bi bi-linkedin"></i
+          ></a>
+          <a href="#"><i class="text-dark bi bi-envelope-at"></i></a>
+          <a href="#"><i class="text-dark bi bi-whatsapp"></i></a>
+        </div>
+        <ul class="list-inline text-dark">
+          <li class="list-inline-item">
+            <a class="navbar-brand btn shadow-lg" href="#daviborges">Inicio</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="navbar-brand btn shadow-lg" href="#sobremim">Sobre Mim</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="navbar-brand btn shadow-lg" href="#tecnologias">Tecnologias</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="navbar-brand btn shadow-lg" href="#servicos">Serviços</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="navbar-brand btn shadow-lg" href="#contato">Contato</a>
+          </li>
+        </ul>
+        <p class="copyright">Davi Borges © 2023</p>
+      </div>
     </footer>
   </body>
 </html>
