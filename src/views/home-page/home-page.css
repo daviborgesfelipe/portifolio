@@ -1,6 +1,9 @@
 /* Css do Bootstrap */
 @import url("bootstrap/dist/css/bootstrap.min.css");
 @import url("bootstrap-icons/font/bootstrap-icons.min.css");
+body {
+  font-family: 'Original Surfer', sans-serif;
+}
 
 .btn-warning {
   background: linear-gradient(90deg in oklab,#212529, #343a40, #8350c6, #6d2bc2);

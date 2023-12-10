@@ -12,12 +12,6 @@ module.exports = {
       "home-page",
       "home-page.ts"
     ),
-    detalhes: path.resolve(
-      __dirname,
-      "src/views",
-      "home-page",
-      "home-page.ts"
-    ),
   },
 
   // Configuração de output do build
@@ -59,17 +53,6 @@ module.exports = {
         "home-page.html"
       ),
       chunks: ["index"],
-    }),
-
-    new HtmlWebpackPlugin({
-      filename: "detalhes.html",
-      template: path.resolve(
-        __dirname,
-        "src/views",
-        "home-page",
-        "home-page.html"
-      ),
-      chunks: ["home-page"],
     }),
 
     new CopyWebpackPlugin({

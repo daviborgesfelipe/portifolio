@@ -27,7 +27,7 @@ function updateContent(imageKey: any) {
               <div class="col fw-200 text-light">
                  <h5>${content.title}</h5>
                  <div class="border-bottom border-warning"></div>
-                 <p>${content.description}</p>
+                 <p class="mt-3">${content.description}</p>
               </div>
            </div>
         </div>
