@@ -28,33 +28,33 @@
     <script async src="dist/index.bundle.js"></script>
   </head>
   <body>
-    <nav class="navbar fixed-top">
-      <div class="container">
-        <a class="navbar-brand text-light fs-3 fw-bold" href="#daviborges"
-          >Davi Borges</a
-        >
-
-        <div class="navbar">
-          <a class="navbar-brand btn text-light" href="#sobremim">Sobre Mim</a>
-          <a class="navbar-brand btn text-light" href="#tecnologias"
-            >Tecnologias</a
-          >
-          <a class="navbar-brand btn text-light" href="#servicos">Serviços</a>
-          <a class="navbar-brand btn text-light" href="#contato">Contato</a>
-        </div>
-      </div>
-    </nav>
+    <header>
+      <nav class="navbar navbar-expand-lg w-100 fixed-top">
+          <div class="container">
+              <a class="navbar-brand text-light fs-3 fw-bold col-10 col-lg-2 col-xl-2 col-xxl-2" style="background-color: blueviole;" href="#daviborges">Davi Borges</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                  <div class="navbar w-100"> 
+                      <a class="nav-link btn text-light col-xl-2 col-lg-2 col-sm-2 col-md-3" href="#sobremim">Sobre Mim</a>
+                      <a class="nav-link btn text-light col-xl-2 col-lg-2 col-sm-2 col-md-3" href="#tecnologias">Tecnologias</a>
+                      <a class="nav-link btn text-light col-xl-2 col-lg-2 col-sm-2 col-md-3" href="#servicos">Serviços</a>
+                      <a class="nav-link btn text-light col-xl-2 col-lg-2 col-sm-2 col-md-3" href="#contato">Contato</a>
+                  </div>
+              </div>
+          </div>
+      </nav>
+  </header>
 
     <main>
-      <div class="container pt-5 d-grid col" id="daviborges">
+      <div class="container pt-5 d-grid col">
         <!-- Conteúdo da página aqui -->
-        <div>
+        <content>
           <!-- Davi Borges -->
-          <section class="d-flex align-items-center justify-content-around">
+          <section class="d-flex align-items-center justify-content-around" id="daviborges" >
             <div class="row d-flex gap-3">
-              <div
-                class="col-3 d-flex align-items-center justify-content-center"
-              >
+              <div class="col-3 d-flex align-items-center justify-content-center " >
                 <img
                   style="max-height: 800px; box-shadow: 6px 3px 6px 3px rgba(89, 100, 67, 0.8);"
                   src="/assets/davi.jpg"
@@ -133,6 +133,7 @@
               </div>
               
               <div class="row text-start">
+               
                 <div class="col-6">
                   <div class="row">
                     <div class="col-3 rounded-5">
@@ -211,7 +212,7 @@
                   </div>
                 </div>
                 
-                <div class="col-6" id="contentContainer">
+                <div class="col-6" id="pnlTecnologias">
                   <div class="row">
                     <div class="col fw-200 text-light">
                       <h5>C#</h5>
@@ -361,7 +362,7 @@
             <div class="container d-flex justify-content-around gap-3">
               <div class="device">
                   <!-- Captura de tela da versão mobile -->
-                  <img class="screenshot img-fluid h-auto" src="/assets/mobile.png" alt="Versão Mobile">
+                  <img class="screenshot img-fluid" src="/assets/mobile.png" alt="Versão Mobile">
               </div>
           
               <div class="desktop">
@@ -380,21 +381,22 @@
                 ><i class="bi bi-github text-warning shadow-lg"></i> Back-end</a
               >
               <a
-              class="col-4 btn btn-warning"
-              data-bs-placement="bottom-end"
-              href="https://github.com/daviborgesfelipe/e-agenda-medica-client"
-              target="_blank"
+                class="col-4 btn btn-warning"
+                data-bs-placement="bottom-end"
+                href="https://github.com/daviborgesfelipe/e-agenda-medica-client"
+                target="_blank"
               ><i class="bi bi-github text-warning shadow-lg"></i> Front-end</a
               >
             </div>
 
           </section>
-        </div>
+        </content>
       </div>
     </main>
 
     <footer class="footer-basic mt-5" id="contato">
-      <div  id="contato">
+
+      <div>
         <div class="social">
           <a href="https://github.com/daviborgesfelipe" target="_blank"
             ><i class="text-dark bi bi-github"></i
