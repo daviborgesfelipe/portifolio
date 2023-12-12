@@ -15,9 +15,17 @@ module.exports = {
   },
 
   // Configuração de output do build
+  // filename: '[name].[contenthash].bundle.js',
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
+    chunkFilename: '[name].chunk.js',
+  },
+
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
   },
 
   module: {
