@@ -54,7 +54,7 @@
           <!-- Davi Borges -->
           <section class="d-flex align-items-center justify-content-around" id="daviborges" >
             <div class="row d-flex gap-3">
-              <div class="col-3 d-flex align-items-center justify-content-center " >
+              <div class="col-3 d-flex align-items-center justify-content-center image-column" >
                 <img
                   style="max-height: 800px; box-shadow: 6px 3px 6px 3px rgba(89, 100, 67, 0.8);"
                   src="/assets/davi.jpg"
@@ -71,9 +71,9 @@
                   Sou desenvolvedor Full<span class="text-warning">-</span
                   >Stack<span class="text-warning">.</span>
                 </h1>
-
+                //esses dois botoes abaixo, acima de 662px ficam visiveis,e abaixo de 662px ficam invisiveis 
                 <br />
-                <div class="row">
+                <div class="row row-buttons">
                   <a
                     class="col-4 btn btn-warning"
                     data-bs-placement="bottom-end"
@@ -83,7 +83,7 @@
                   >
                 </div>
                 <br />
-                <div class="row">
+                <div class="row row-buttons">
                   <a
                     class="col-4 btn btn-warning"
                     data-bs-placement="bottom-end"
@@ -92,6 +92,24 @@
                     ><i class="bi bi-github text-warning"></i> GitHub</a
                   >
                 </div>
+              </div>
+              //esses dois botoes abaixo, acima de 662px ficam invisiveis,e abaixo de 662px ficam visiveis 
+              <!-- Adicione esses botões no final do seu HTML, fora da div com a classe "col-8" -->
+              <div class="fixed-buttons-container d-flex justify-content-end">
+                <a
+                  class="fs-1 fixed-btn btn btn-warning"
+                  href="https://www.linkedin.com/in/davi-borges-felipe/"
+                  target="_blank"
+                >
+                  <i class="bi bi-linkedin text-warning"></i>
+                </a>
+                <a
+                  class="fs-1 fixed-btn btn btn-warning"
+                  href="https://github.com/daviborgesfelipe"
+                  target="_blank"
+                >
+                  <i class="bi bi-github text-warning"></i>
+                </a>
               </div>
             </div>
           </section>
