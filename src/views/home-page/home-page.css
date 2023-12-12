@@ -1,7 +1,58 @@
 /* Css do Bootstrap */
 @import url("bootstrap/dist/css/bootstrap.min.css");
 @import url("bootstrap-icons/font/bootstrap-icons.min.css");
-/* Cores da paleta */
+
+@media (min-width: 991px) {
+  .navbar a {
+      margin-right: 15px; /* Ajuste conforme necessário */
+  }
+}
+
+@media (max-width: 769px) {
+  .col-3 img {
+    display: none;
+  }
+  .image-column {
+    display: none !important;
+  }
+}
+
+/* Botões que serão visíveis acima de 662px */
+@media (min-width: 663px) {
+  .row-buttons {
+    display: block !important; /* Torna os botões visíveis */
+  }
+
+  .fixed-buttons-container {
+    display: none !important; /* Torna os botões fixos invisíveis */
+  }
+}
+
+/* Botões que serão visíveis abaixo de 662px */
+@media (max-width: 662px) {
+  .row-buttons {
+    display: none !important; /* Torna os botões na linha invisíveis */
+  }
+
+  .fixed-buttons-container {
+    display: flex !important;
+    position: fixed;
+    bottom: 10px; /* Ajuste conforme necessário para a posição vertical desejada */
+    right: 10px; /* Ajuste conforme necessário para a posição horizontal desejada */
+    z-index: 1000; /* Garante que os botões fiquem sobre outros elementos na página, se necessário */
+    gap: 8px;
+  }
+  .fixed-buttons-container > a{
+    border-radius: 25px;
+  }
+  .btn-warning {
+    background:  var(--cor-preto) !important;
+    box-shadow: 3px 1px 3px 1px rgba(89, 100, 67, 0.3);
+    border: none;
+    color: var(--cor-branco);
+  }
+}
+
 :root {
   --cor-preto: #212529;
   --cor-cinza-escuro: #343a40;
@@ -10,6 +61,34 @@
   --cor-verde-oliva: #596643;
   --cor-amarelo: #ffc107;
   --cor-branco: #ffffff;
+}
+
+html{
+  min-width: 100% !important;
+}
+
+html, body {
+  background-color: var(--cor-preto);
+  font-family: 'Original Surfer', sans-serif;
+  scroll-behavior: smooth;
+  min-width: 100%;
+  overflow-x: hidden;  /* Adicione esta linha para evitar a barra de rolagem horizontal */
+}
+
+footer {
+  background-color: var(--cor-verde-oliva);
+  position: relative;  /* Adicione esta linha para garantir que o rodapé fique no final da página */
+}
+
+nav{
+  height: 8rem !important;
+  position: fixed;
+  background-color: var(--cor-verde-oliva) !important;
+}
+
+section{
+  min-height: 100vh; 
+  padding-top: 15rem; 
 }
 
 .rounded-image-container {
@@ -24,28 +103,30 @@
   left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(var(--cor-preto), var(--cor-preto), var(--cor-preto), 0.1);
   z-index: 1;
 }
 
 .device {
   position: relative;
-  width: 300px; /* Ajuste conforme necessário para representar o tamanho do dispositivo móvel */
-  height: 500px; /* Ajuste conforme necessário para representar o tamanho do dispositivo móvel */
-  background-color: #f1f1f1;
+  width: 350px;
+  max-height: 500px; 
+  background-color: var(--cor-branco);
   border: 16px black solid;
-  border-top-width: 30px;
+  border-top-width: 16px;
   border-radius: 16px;
 }
+
 .device > img {
-  max-height: 500px;
+  max-width: 100%;
+  min-height: 100%;
 }
 
 .desktop {
   position: relative;
   width: 800px; /* Ajuste conforme necessário para representar o tamanho do desktop */
-  height: 500px; /* Ajuste conforme necessário para representar o tamanho do desktop */
-  background-color: #f1f1f1;
+  max-height: 500px; /* Ajuste conforme necessário para representar o tamanho do desktop */
+  background-color: var(--cor-branco);
   border: 16px black solid;
   border-radius: 16px;
 }
@@ -54,31 +135,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px;
-}
-
-
-
-
-
-
-
-html, body {
-  background-color: var(--cor-preto);
-  font-family: 'Original Surfer', sans-serif;
-  scroll-behavior: smooth;
-}
-nav{
-  height: 5rem !important;
-  position: fixed;
-  background-color: var(--cor-verde-oliva) !important;
-}
-section{
-  min-height: 100vh; 
-  padding-top: 5rem; 
-}
-footer{
-  background-color: var(--cor-verde-oliva);
 }
 
 .btn-warning {
@@ -90,6 +146,7 @@ footer{
 .text-warning {
   color: var(--cor-roxo-escuro) !important;
 }
+
 .text-secundary {
   color: var(--cor-verde-oliva) !important;
 }
@@ -116,6 +173,7 @@ footer{
 
 .footer-basic {
   padding: 40px 0;
+  min-width: 100%;
   background-color: var(--cor-verde-oliva);
   color: var(--cor-verde-oliva);
 }
