@@ -9,7 +9,7 @@
 }
 
 @media (max-width: 769px) {
-  .col-3 img {
+  .col-4 img {
     display: none;
   }
   .image-column {
@@ -18,7 +18,8 @@
 }
 
 /* Botões que serão visíveis acima de 662px */
-@media (min-width: 663px) {
+@media (min-width: 769px) {
+
   .row-buttons {
     display: block !important; /* Torna os botões visíveis */
   }
@@ -26,10 +27,24 @@
   .fixed-buttons-container {
     display: none !important; /* Torna os botões fixos invisíveis */
   }
+
 }
 
+.container-wrapper {
+  margin-left: 15px; /* Defina a margem lateral esquerda desejada */
+  margin-right: 15px; /* Defina a margem lateral direita desejada */
+}
+
+@media (max-width: 575px) {
+
+  .container-wrapper {
+    margin-left: 5rem; /* Ajuste para margem lateral menor em telas menores */
+    margin-right: 5rem; /* Ajuste para margem lateral menor em telas menores */
+  }
+
+}
 /* Botões que serão visíveis abaixo de 662px */
-@media (max-width: 662px) {
+@media (max-width: 768px) {
   .row-buttons {
     display: none !important; /* Torna os botões na linha invisíveis */
   }
@@ -71,7 +86,7 @@ html, body {
   background-color: var(--cor-preto);
   font-family: 'Original Surfer', sans-serif;
   scroll-behavior: smooth;
-  min-width: 100%;
+  min-width: 100% !important;
   overflow-x: hidden;  /* Adicione esta linha para evitar a barra de rolagem horizontal */
 }
 
@@ -88,7 +103,18 @@ nav{
 
 section{
   min-height: 100vh; 
+  min-width: 100% !important;
   padding-top: 15rem; 
+  padding-inline: 5rem;
+}
+
+.foto{
+  box-shadow: 6px 3px 6px 3px rgba(89, 100, 67, 0.8);
+  max-height: 900px;
+}
+
+.image-column{
+  padding-left: 5rem;
 }
 
 .rounded-image-container {
