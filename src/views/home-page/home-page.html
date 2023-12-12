@@ -31,75 +31,83 @@
     <header>
       <nav class="navbar navbar-expand-lg w-100 fixed-top">
           <div class="container">
-              <a class="navbar-brand text-light fs-3 fw-bold col-10 col-lg-2 col-xl-2 col-xxl-2" style="background-color: blueviole;" href="#daviborges">Davi Borges</a>
+            <a class="navbar-brand text-white fs-6 fw-bold col-2 col-lg-2 col-xl-2 col-xxl-2" href="#daviborges">Davi Borges</a>
+            <div>
+
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                  <i class="bi bi-menu-button text-white"></i>
               </button>
-              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                  <div class="navbar w-100"> 
-                      <a class="nav-link btn text-light col-xl-2 col-lg-2 col-sm-2 col-md-3" href="#sobremim">Sobre Mim</a>
-                      <a class="nav-link btn text-light col-xl-2 col-lg-2 col-sm-2 col-md-3" href="#tecnologias">Tecnologias</a>
-                      <a class="nav-link btn text-light col-xl-2 col-lg-2 col-sm-2 col-md-3" href="#servicos">Serviços</a>
-                      <a class="nav-link btn text-light col-xl-2 col-lg-2 col-sm-2 col-md-3" href="#contato">Contato</a>
-                  </div>
+              <button class="nav-item btn text-secondary btn-desktop" id="toggleTheme"><i class="bi bi-sun"></i></button>
+              
+            </div>
+            
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <div class="navbar w-100"> 
+                <a class="nav-item col-xl-4 col-lg-2"></a>
+                <a class="nav-link btn text-white col-xl-2 col-lg-3 col-sm-3 col-md-3" href="#sobremim">Sobre Mim</a>
+                <a class="nav-link btn text-white col-xl-2 col-lg-3 col-sm-3 col-md-3" href="#tecnologias">Tecnologias</a>
+                <a class="nav-link btn text-white col-xl-2 col-lg-2 col-sm-3 col-md-3" href="#servicos">Serviços</a>
+                <a class="nav-link btn text-white col-xl-2 col-lg-2 col-sm-3 col-md-3" href="#contato">Contato</a>
               </div>
+              <button class="nav-item btn text-secondary btn-mobile" id="toggleTheme"><i class="bi bi-sun"></i></button>
+
+            </div>
+
           </div>
       </nav>
     </header>
 
     <main >
-      <div class="container-wrapper pt-5 d-grid col mx-0 w-100">
+      <div class="pt-5 d-grid col mx-0 w-100">
         <!-- Conteúdo da página aqui -->
         <content class="w-100">
 
           <!-- Davi Borges -->
-          <section id="daviborges" class="d-flex align-items-center w-100">
+          <section id="daviborges" class=" align-items-center w-100">
+            
             <!-- Layout -->
-            <div class="row d-flex layout align-items-xxl-center w-100">
+            <div class="row d-flex align-items-xl-center align-items-center w-100">
+
               <!-- Foto -->
-              <div class="col-4 col-xxl-6 d-flex align-items-center justify-content-center image-column" >
+              <div class="col-4 col-xxl-5 col-xl-4 col-sm-4 d-flex align-items-center justify-content-center image-column" >
                 <img src="/assets/davi.jpg"
                   class="img-fluid rounded-pill foto"/>
               </div>
 
               <!-- Apresentacao -->
-              <div class="col-12 col-xl-7 col-xxl-6 col-md-7 text-start fw-semibold mt-xxl-5 align-items-xxl-center justify-content-xxl-center">
+              <div class="col-12 col-md-8 col-xl-8 col-sm-7 col-xxl-7 text-start fw-semibold align-items-center justify-content-center">
                 <!-- Texto -->
                 <h1 class="text-light">
                   Olá<span class="text-warning">, </span> eu sou <br />
-                  <span class="h1 fw-semibold text-warning">Davi Borges<span class="text-secundary">.</span></span>
+                  <span class="h1 fw-semibold text-warning">Davi Borges<span class="text-secondary">.</span></span>
                 </h1>
                 <h1 class="fw-semibold text-light">
                   Sou desenvolvedor Full<span class="text-warning">-</span
                   >Stack<span class="text-warning">.</span>
                 </h1>
 
-                <!-- Botoes Desktop -->
-                <br />
-                <div class="row row-buttons">
+              </div>
+              <!-- Fim Apresentacao -->
+              <!-- Botoes Desktop -->
+              <div class="row justify-content-end row-buttons">
+                <div class="col text-end">
                   <a
-                    class="col-4 btn btn-warning"
+                    class="btn btn-warning"
                     data-bs-placement="bottom-end"
                     href="https://www.linkedin.com/in/davi-borges-felipe/"
                     target="_blank"
-                    ><i class="bi bi-linkedin text-warning"></i> LinkedIn</a
-                  >
+                  ><i class="bi bi-linkedin text-white"></i> LinkedIn</a>
                 </div>
-                <br />
-                <div class="row row-buttons">
+                <div class="col text-end">
                   <a
-                    class="col-4 btn btn-warning"
+                    class="btn btn-warning"
                     data-bs-placement="bottom-end"
                     href="https://github.com/daviborgesfelipe"
                     target="_blank"
-                    ><i class="bi bi-github text-warning"></i> GitHub</a
-                  >
+                  ><i class="bi bi-github text-white"></i> GitHub</a>
                 </div>
-                <!-- Fim Botoes Desktop -->
-
               </div>
-              <!-- Fim Apresentacao -->
-
+              <!-- Fim Botoes Desktop -->
               <!-- Botoes Mobile -->
               <div class="fixed-buttons-container d-flex justify-content-end">
                 <a
@@ -125,14 +133,14 @@
 
           <!-- Sobre Mim -->
           <section id="sobremim">
-            <div class="row d-flex gap-3 justify-content-around pt-xxl-5">
+            <div class="row d-flex gap-3 justify-content-around pt-xxl-5" >
               
               <div class="text-start">
                 <!-- Titulo -->
-                <h3 class="fw-semibold text-light">Sobre mim</h3>
+                <h2 class="fw-semibold text-warning">Sobre mim</h2>
                 <div class="border-bottom border-warning"></div>
                 <!-- Texto -->
-                <p class="fw-200 text-light mt-3">
+                <p class="fs-6 fw-200 text-light mt-3">
                   Sou um desenvolvedor
                   <span class="text-warning">Full Stack.</span> Atualmente, minhas linguagens favoritas são, para o back end, uso o
                   <span class="text-warning">C#</span> junto das tecnologias
@@ -158,21 +166,22 @@
             <div class="row d-flex mx-0 gap-3 justify-content-around pt-xxl-5">
               
               <!-- Titulo -->
-              <div>
-                <h3 class="row fw-semibold text-light">Tecnologias</h3>
+              <div class="pb-3">
+                <h2 class="row fw-semibold text-warning">Tecnologias</h2>
                 <div class="row border-bottom border-warning"></div>
               </div>
 
-              <div class="row text-start">
+              <div class="row">
                 
                 <!-- Lista de Icons das Tecnologias -->
-                <div class="col-6">
+                <div class="col-12 col-xl-6 gap-2 mb-4">
 
-                  <div class="row">
+                  <div class="row mt-3">
+
                     <div class="col-3 rounded-5">
                       <img
                       id="dotnetImage"
-                      style="max-height: 320px"
+                      style="max-height: 200px"
                       src="/assets/dotnet.png"
                       class="img-fluid rounded-pill"
                       />
@@ -181,7 +190,7 @@
                     <div class="col-3 rounded-5">
                       <img
                       id="csharpImage"
-                      style="max-height: 320px"
+                      style="max-height: 200px"
                       src="/assets/csharp.png"
                       class="img-fluid rounded-pill"
                       />
@@ -190,7 +199,7 @@
                     <div class="col-3 rounded-5">
                       <img
                       id="angularImage"
-                      style="max-height: 320px"
+                      style="max-height: 200px"
                       src="/assets/angularlogo.png"
                       class="img-fluid rounded-pill"
                       />
@@ -199,47 +208,48 @@
                     <div class="col-3 rounded-5">
                       <img
                       id="typescriptImage"
-                      style="max-height: 320px"
+                      style="max-height: 200px"
                       src="/assets/typescript.png"
                       class="img-fluid rounded-pill"
                       />
                     </div>
                   </div>
 
-                  <div class="row mt-5">
-                  <div class="col-3 rounded-5">
-                    <img
-                      id="visualstudioImage"
-                      style="max-height: 320px"
-                      src="/assets/visualstudio.png"
-                      class="img-fluid rounded-pill"
+                  <div class="row mt-3">
+
+                    <div class="col-3 rounded-5">
+                      <img
+                        id="visualstudioImage"
+                        style="max-height: 200px"
+                        src="/assets/visualstudio.png"
+                        class="img-fluid rounded-pill"
                       />
                     </div>
                     
                     <div class="col-3 rounded-5">
                       <img
-                      id="bootstrapImage"
-                      style="max-height: 320px"
-                      src="/assets/bootstrap.png"
-                      class="img-fluid rounded-pill"
+                        id="bootstrapImage"
+                        style="max-height: 200px"
+                        src="/assets/bootstrap.png"
+                        class="img-fluid rounded-pill"
                       />
                     </div>
                     
                     <div class="col-3 rounded-5">
                       <img
-                      id="sqlserverImage"
-                      style="max-height: 320px"
-                      src="/assets/sqlserver.png"
-                      class="img-fluid rounded-pill"
+                        id="sqlserverImage"
+                        style="max-height: 200px"
+                        src="/assets/sqlserver.png"
+                        class="img-fluid rounded-pill"
                       />
                     </div>
                     
                     <div class="col-3 rounded-5">
                       <img
-                      id="githubImage"
-                      style="max-height: 320px"
-                      src="/assets/github.png"
-                      class="img-fluid rounded-pill"
+                        id="githubImage"
+                        style="max-height: 200px"
+                        src="/assets/github.png"
+                        class="img-fluid rounded-pill"
                       />
                     </div>
                   </div>
@@ -248,15 +258,15 @@
                 <!-- Fim Lista de Icons das Tecnologias -->
                 
                 <!-- Painel de Discricao das Tecnologias -->
-                <div class="col-6" id="pnlTecnologias">
+                <div class="col-12 col-xl-6" id="pnlTecnologias">
                   
-                  <div class="row">
+                  <div class="row text-start px-4">
                     <div class="col fw-200 text-light">
                       <!-- Titulo -->
-                      <h5>C#</h5>
+                      <h3 class="text-warning">C#</h3>
                       <div class="border-bottom border-warning"></div>
                       
-                      <p class="mt-3">
+                      <p class="mt-3 fs-6">
                         C# é uma linguagem de programação desenvolvida pela
                         Microsoft, conhecida por sua versatilidade e eficiência.
                         Com foco em segurança e desempenho, C# é amplamente
@@ -282,17 +292,17 @@
             <div class="row d-flex justify-content-around mt-5 text-start">
 
               <!-- Descricao --> 
-              <div class="col-6">
+              <div class="col-12 col-xl-6">
                 <!-- Titulo -->
-                <h3 class="fw-semibold text-light">Serviços</h3>
+                <h2 class="fw-semibold text-warning">Serviços</h2>
                 <div class="border-bottom border-warning"></div>
                 
-                <p class="fw-200 text-light mt-3">
+                <p class="fs-6 fw-200 text-light mt-3">
                   Se você precisa de alguém para desenvolver um aplicativo, site
                   pessoal, comercial ou até mesmo uma simples landing page, você
                   está no lugar certo!
                 </p>
-                <p class="fw-200 text-light mt-3">
+                <p class="fs-6 fw-200 text-light mt-3">
                   Realizo as entregas dos projetos através do Github em um
                   repositório privado ou público, com o intuito de manter o
                   código sempre versionado, facilitando o processo de controle
@@ -303,40 +313,42 @@
               <!-- Fim Descricao --> 
 
               <!-- Skills --> 
-              <div class="col-6">
+              <div class="col-12 col-xl-6">
                 <div class="row">
 
                   <!-- Desenvolvimento -->
-                  <div class="col-6 fw-200 text-light">
-                    <i class="bi bi-code ms-0 fs-3 text-warning mt-0"></i>
-                    <h5>Desenvolvimento<span class="text-warning">.</span></h5>
-                    <p>
+                  <div class="col-12 col-xl-6 fw-200 text-light">
+                    <i class="bi bi-code ms-0 text-white mt-0"></i>
+                    <h3 class="text-warning">
+                      Desenvolvimento<span class="text-secondary">.</span>
+                    </h3>
+                    <p class="fs-6">
                       Desenvolvimento de projetos end-to-end, criando API's no
                       padrão REST e criando websites dinâmicos ou estáticos.
                     </p>
                   </div>
 
                   <!-- Responsividade Amigável -->
-                  <div class="col-6 fw-200 text-light">
-                    <i class="bi bi-display ms-0 fs-3 text-warning"></i>
-                    <h5>
-                      Responsividade Amigável
-                      <span class="text-warning">.</span>
+                  <div class="col-12 col-xl-6 fw-200 text-light">
+
+                    <i class="bi bi-display ms-0 text-white"></i>
+                    <h3 class="text-warning">
+                      Responsividade Amigável<span class="text-secondary">.</span>
                     </h5>
-                    <p>
+                    <p class="fs-6 text-light">
                       Design responsivo tornando seu site acessível,
                       independentemente do dispositivo.
                     </p>
+
                   </div>
 
                   <!-- Clean Code -->
                   <div class="col fw-200 text-light">
-                    <i class="bi bi-stars fs-3 text-warning"></i>
-                    <h5>
-                      Clean code
-                      <span class="text-warning">.</span>
-                    </h5>
-                    <p>
+                    <i class="bi bi-stars text-white"></i>
+                    <h3 class="text-warning">
+                      Clean code<span class="text-secondary">.</span>
+                    </h3>
+                    <p class="fs-6">
                       Desenvolvimento seguindo os principais design patterns,
                       com o objetivo de tornar o código mais intuitivo, elegante
                       e com fácil manutenção.
@@ -345,12 +357,11 @@
 
                   <!-- TDD -->
                   <div class="row fw-200 text-light">
-                    <i class="bi bi-tools ms-0 fs-3 text-warning mt-0"></i>
-                    <h5>
-                      Desenvolvimento orientado por testes (TDD)
-                      <span class="text-warning" >.</span >
-                    </h5>
-                    <p>
+                    <i class="bi bi-tools ms-0 text-white mt-0"></i>
+                    <h3 class="text-warning">
+                      Desenvolvimento orientado por testes (TDD)<span class="text-secondary" >.</span >
+                    </h3>
+                    <p class="fs-6">
                       Implementação de funcionalidades com base em testes,
                       garantindo uma abordagem mais segura e robusta no
                       desenvolvimento de software.
@@ -359,12 +370,11 @@
 
                   <!-- DDD -->
                   <div class="row fw-200 text-light">
-                    <i class="bi bi-diagram-2 ms-0 fs-3 text-warning mt-0"></i>
-                    <h5>
-                      Design Driven Development (DDD)
-                      <span class="text-warning">.</span>
-                    </h5>
-                    <p>
+                    <i class="bi bi-diagram-2 ms-0 text-white mt-0"></i>
+                    <h3 class="text-warning">
+                      Design Driven Development (DDD)<span class="text-secondary">.</span>
+                    </h3>
+                    <p class="fs-6">
                       Abordagem de desenvolvimento que prioriza a modelagem de
                       domínio, criando um código alinhado com a lógica de
                       negócios da aplicação.
@@ -372,12 +382,14 @@
                   </div>
 
                   <!-- Testes Unitarios -->
-                  <div class="col-6 fw-200 text-light">
+                  <div class="col-12 col-xl-6 fw-200 text-light">
                     <i
-                      class="bi bi-check-square ms-0 fs-3 text-warning mt-0"
+                      class="bi bi-check-square ms-0 text-white mt-0"
                     ></i>
-                    <h5>Testes Unitários<span class="text-warning">.</span></h5>
-                    <p>
+                    <h3 class="text-warning">
+                      Testes Unitários<span class="text-secondary">.</span>
+                    </h3>
+                    <p class="fs-6">
                       Implementação de testes para verificar se unidades
                       individuais do código funcionam conforme o esperado,
                       garantindo a confiabilidade do sistema.
@@ -385,13 +397,12 @@
                   </div>
 
                   <!-- Testes Integração -->
-                  <div class="col fw-200 text-light">
-                    <i class="bi bi-link-45deg ms-0 fs-3 text-warning mt-0"></i>
-                    <h5>
-                      Testes de Integração
-                      <span class="text-warning">.</span>
-                    </h5>
-                    <p>
+                  <div class="col-12 col-xl-6 fw-200 text-light">
+                    <i class="bi bi-link-45deg ms-0 text-white mt-0"></i>
+                    <h3 class="text-warning">
+                      Testes de Integração<span class="text-secondary">.</span>
+                    </h3>
+                    <p class="fs-6">
                       Verificação da interação entre diferentes partes do
                       sistema, garantindo o bom funcionamento das integrações.
                     </p>
@@ -408,71 +419,91 @@
           <section id="projetos">
 
             <!-- Titulo -->
-            <h3 class="fw-semibold text-light">E-Agenda Medica</h3>
+            <h3 class="fw-semibold text-warning">E-Agenda Medica</h3>
             <div class="border-bottom border-warning mb-4"></div>
-
+                        <!-- Imagens Desktop e Mobile -->
+            <div class="row d-flex gap-3 justify-content-xl-center">
+              
+              <div class="device col-12 col-xl-6 px-0">
+                  <!-- Captura de tela da versão mobile -->
+                  <img class="screenshot img-fluid" src="/assets/mobile.png" alt="Versão Mobile">
+              </div>
+          
+              <div class="desktop col-12 col-xl-6 px-0">
+                  <!-- Captura de tela da versão desktop -->
+                  <img class="screenshot img-fluid" src="/assets/fullhd.png" alt="Versão Desktop">
+              </div>
+            </div>
+            <!-- Fim Imagens Desktop e Mobile -->
             <!-- Descricao -->
             <div class="row">
               <!-- Cabeçalho -->
-              <i class="bi bi-info-circle ms-0 fs-5 text-warning mt-0">
+              <i class="bi bi-info-circle ms-0 text-secondary mt-0">
                Info
               </i>
               <!-- Titulo 01 -->
-              <h5 class="text-secondary mt-xl-3">
+              <h4 class="text-warning mt-xl-3">
                 Descrição
-                <span class="text-warning">:</span>
-              </h5>
+                <span class="text-secondary">:</span>
+              </h4>
               <!-- Texto 02 -->
               <p class="text-light fs-6 mb-xl-5 mt-xl-3">
                 Desenvolvimento de um aplicativo web para eficiente gestão do cronograma de atividades em clínicas médicas. Recursos chave incluem agendamento de cirurgias e consultas, identificação única de médicos via CRM, definição de horários, automação de períodos de recuperação, e flexibilidade para eventos passados ou futuros, com opções de modificação e exclusão. Funcionalidades adicionais abrangem alertas de conflitos de horários para o mesmo médico e uma lista dos 10 médicos mais ativos em determinado período.
               </p>
 
               <!-- Titulo 02 -->
-              <h5 class="text-secondary mt-xl-3">
+              <h4 class="text-warning mt-xl-3">
                 Tecnologias Utilizadas
-                <span class="text-warning">:</span>
-              </h5>
+                <span class="text-secondary">:</span>
+              </h4>
               <!-- Texto 02 -->
               <p class="text-light fs-6 mb-xl-5 mt-xl-3">
-                O E-Agenda Médica é uma aplicação moderna com Angular no frontend para criar SPAs responsivas. No backend, utiliza ASP.NET Core Web API e Entity Framework Core para operações eficientes no banco de dados. Adota práticas modernas, frameworks como FluentValidation garantem integridade e transparência, e é organizado para facilitar manutenção e expansão. Este projeto representa a convergência de tecnologias avançadas, proporcionando uma solução eficaz e moderna para a gestão de cronograma em clínicas médicas.
+                O E-Agenda Médica adota tecnologias modernas para oferecer uma experiência eficiente. 
               </p>
-            
+              <!-- Texto 02 -->
+              <p class="text-light fs-6 mb-xl-5 mt-xl-3">
+                No frontend, utiliza Angular para construir Single Page Applications e RxJS para programação assíncrona. Angular Material e Bootstrap são empregados para criar interfaces modernas. A estrutura do projeto segue as melhores práticas, com componentes reutilizáveis, serviços de lógica de negócios, modelos de dados e views. 
+              </p>
+              <p class="text-light fs-6 mb-xl-5 mt-xl-3">
+                No backend, faz uso do ASP.NET Core Web API, Entity Framework Core para mapeamento objeto-banco de dados, e ferramentas como FluentValidation, FluentResults, AutoMapper, Serilog e SequentialGuidGenerator para aprimorar a qualidade e eficácia do desenvolvimento.
+              </p>
             </div>
-            
-            <!-- Imagens Desktop e Mobile -->
-            <div class="container d-flex justify-content-around gap-3">
-              
-              <div class="device">
-                  <!-- Captura de tela da versão mobile -->
-                  <img class="screenshot img-fluid" src="/assets/mobile.png" alt="Versão Mobile">
-              </div>
-          
-              <div class="desktop">
-                  <!-- Captura de tela da versão desktop -->
-                  <img class="screenshot img-fluid" src="/assets/fullhd.png" alt="Versão Desktop">
-              </div>
-            </div>
-            <!-- Fim Imagens Desktop e Mobile -->
 
             <br />
 
             <!-- Botoes Redes Sociais -->
-            <div class="col d-flex justify-content-around">
+            <!-- <div class="col d-flex justify-content-around">
               
               <a
-                class="col-4 btn btn-warning"
+                class="col-5 btn btn-warning align-items-center justify-content-center"
                 data-bs-placement="bottom-end"
                 href="https://github.com/daviborgesfelipe/e-AgendaMedica.Server"
                 target="_blank"
-              ><i class="bi bi-github text-warning shadow-lg"></i> Back-end</a>
+              ><i class="bi bi-github text-white shadow-lg"></i> Back-end</a>
 
               <a
-                class="col-4 btn btn-warning"
+                class="col-5 btn btn-warning align-items-center justify-content-center"
                 data-bs-placement="bottom-end"
                 href="https://github.com/daviborgesfelipe/e-agenda-medica-client"
                 target="_blank"
-              ><i class="bi bi-github text-warning shadow-lg"></i> Front-end</a>
+              ><i class="bi bi-github text-white shadow-lg"></i> Front-end</a>
             
+            </div> -->
+
+            <div class="col d-flex justify-content-around gap-3">
+              <a
+                class="btn btn-warning w-100 text-center"
+                data-bs-placement="bottom-end"
+                href="https://github.com/daviborgesfelipe/e-AgendaMedica.Server"
+                target="_blank"
+              ><i class="bi bi-github text-white shadow-lg"></i> Back-end</a>
+            
+              <a
+                class="btn btn-warning w-100 text-center"
+                data-bs-placement="bottom-end"
+                href="https://github.com/daviborgesfelipe/e-agenda-medica-client"
+                target="_blank"
+              ><i class="bi bi-github text-white shadow-lg"></i> Front-end</a>
             </div>
             <!-- Fim Botoes Redes Sociais -->
 
@@ -489,15 +520,15 @@
         <div class="social">
           <!-- GitHub -->
           <a href="https://github.com/daviborgesfelipe" target="_blank">
-            <i class="text-dark bi bi-github"></i>
+            <i class="text-light bi bi-github"></i>
           </a>
           <!-- LinkedIn -->
           <a href="https://www.linkedin.com/in/davi-borges-felipe/" target="_blank">
-            <i class="text-dark bi bi-linkedin"></i>
+            <i class="text-light bi bi-linkedin"></i>
           </a>
           <!-- TO-DO gmail and WhatsApp -->
-          <a href="#"><i class="text-dark bi bi-envelope-at"></i></a>
-          <a href="#"><i class="text-dark bi bi-whatsapp"></i></a>
+          <a href="#"><i class="text-light bi bi-envelope-at"></i></a>
+          <a href="#"><i class="text-light bi bi-whatsapp"></i></a>
         
         </div>
 
@@ -505,23 +536,23 @@
         <ul class="list-inline text-dark">
           <!-- Inicio -->
           <li class="list-inline-item">
-            <a class="navbar-brand btn shadow-lg" href="#daviborges">Inicio</a>
+            <a class="navbar-brand btn shadow-lg text-light" href="#daviborges">Inicio</a>
           </li>
           <!-- Sobre Mim -->
           <li class="list-inline-item">
-            <a class="navbar-brand btn shadow-lg" href="#sobremim">Sobre Mim</a>
+            <a class="navbar-brand btn shadow-lg text-light" href="#sobremim">Sobre Mim</a>
           </li>
           <!-- Tecnologias -->
           <li class="list-inline-item">
-            <a class="navbar-brand btn shadow-lg" href="#tecnologias">Tecnologias</a>
+            <a class="navbar-brand btn shadow-lg text-light" href="#tecnologias">Tecnologias</a>
           </li>
           <!-- Servicos -->
           <li class="list-inline-item">
-            <a class="navbar-brand btn shadow-lg" href="#servicos">Serviços</a>
+            <a class="navbar-brand btn shadow-lg text-light" href="#servicos">Serviços</a>
           </li>
           <!-- Contatos -->
           <li class="list-inline-item">
-            <a class="navbar-brand btn shadow-lg" href="#contato">Contatos</a>
+            <a class="navbar-brand btn shadow-lg text-light" href="#contato">Contatos</a>
           </li>
         </ul>
 
