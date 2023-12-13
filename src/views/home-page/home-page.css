@@ -23,7 +23,7 @@ h4{
   font-size: 1.2rem;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
 
   .col-4 img {
     display: none;
@@ -35,6 +35,7 @@ h4{
 }
 
 @media (min-width: 769px) {
+
   .row-buttons {
     display: block !important; 
   }
@@ -45,6 +46,7 @@ h4{
 }
 
 @media (max-width: 768px) {
+  
   .row-buttons {
     display: none !important; 
   }
@@ -177,16 +179,19 @@ h4{
     font-size: 3.3rem;
   }
 }
+
 @media (min-height: 1080px) {
   .foto{
     max-height: 650px !important;
   }
 }
+
 @media (min-height: 1440px) {
   .foto{
     max-height: 900px !important;
   }
 }
+
 @media (max-width: 990px) {
   .btn-mobile {
     display: none;
@@ -198,12 +203,16 @@ h4{
     display: none;
   }
 }
+
 :root {
+  --cor-preto-total: #000000;
+  --cor-preto-transparente: #2a2a2a9e;
   --cor-preto: #212529;
   --cor-cinza: #abb8c3;
   --cor-cinza-dark: #343a40;
   --cor-roxo: #9b51e0;
   --cor-roxo-dark: #6d2bc2;
+  --cor-azul-transparente: #8ed2fce7;
   --cor-azul: #8ed1fc;
   --cor-azul-dark: #0693e3;
   --cor-verde: #596643;
@@ -216,8 +225,14 @@ h4{
 }
 
 body.light-mode {
-  background-color: var(--cor-azul);
+  /* Aplica a zebra usando nth-child */
+  section:nth-child(odd) {
+    background-color: var(--cor-azul);
+  }
 
+  section:nth-child(even) {
+    background-color: var(--cor-azul-transparente);
+  }
   .text-light {
     color: var(--cor-cinza-dark) !important;
   }
@@ -237,7 +252,7 @@ body.light-mode {
     border-color: var(--cor-laranjado) !important;
   }
   .btn-warning{
-    background: linear-gradient(90deg, var(--cor-verde-dark), var(--cor-verde), var(--cor-azul), var(--cor-azul));
+    background: linear-gradient(90deg, var(--cor-verde-dark), var(--cor-verde), var(--cor-azul), var(--cor-azul-transparente));
   }
 
   nav{
@@ -250,7 +265,7 @@ body.light-mode {
 }
 
 .btn-warning {
-  background: linear-gradient(90deg, var(--cor-roxo-dark), var(--cor-roxo), var(--cor-preto), var(--cor-preto), var(--cor-preto));
+  background: linear-gradient(90deg, var(--cor-roxo-dark), var(--cor-roxo), var(--cor-preto), var(--cor-preto), var(--cor-preto-transparente));
   border: none;
   color: var(--cor-branco);
 }
@@ -286,6 +301,7 @@ body.light-mode {
 .footer-basic {
   padding: 40px 0;
   min-width: 100%;
+  min-height: 100%;
   background-color: var(--cor-roxo-dark) !important;
   color: var(--cor-verde);
 }
@@ -313,7 +329,14 @@ section{
   padding-top: 11rem; 
   padding-inline: 2rem !important;
 }
+/* Aplica a zebra usando nth-child */
+section:nth-child(odd) {
+  background-color: var(--cor-preto-transparente);
+}
 
+section:nth-child(even) {
+  background-color: var(--cor-preto);
+}
 .foto{
   box-shadow: 6px 3px 6px 3px rgba(89, 100, 67, 0.8);
   max-height: 400px;
