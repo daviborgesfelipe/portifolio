@@ -5,22 +5,37 @@
 i{
   font-size: 1rem;
 }
+
+.nav-link, .list-inline-item{
+  font-family: 'Dosis', sans-serif;
+}
+
 .fs-6 {
   font-size: 1rem; 
+  font-family: 'Dosis', sans-serif;
+}
+
+.fs-7 {
+  font-size: 1rem; 
+  font-family: 'Original Surfer', sans-serif;
 }
 
 h1, .h1 {
-  font-size: 1.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem;
+  min-width: 90vw;
 }
-
 h2 {
   font-size: 1.3rem;
+  font-family: 'Bebas Neue', sans-serif;
 }
 h3{
   font-size: 1.3rem;
+  font-family: 'Bebas Neue', sans-serif;
 }
 h4{
   font-size: 1.2rem;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -72,6 +87,34 @@ h4{
   }
 }
 
+@media (min-width: 454px) {
+  i{
+    font-size: 1rem;
+  }
+  
+  .fs-6 {
+    font-size: 1rem; 
+  }
+  
+  .fs-7 {
+    font-size: 1rem; 
+  }
+  
+  h1, .h1 {
+    font-size: 2.5rem;
+    min-width: 90vw;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3{
+    font-size: 1.3rem;
+  }
+  h4{
+    font-size: 1.2rem;
+  }
+}
+
 @media (min-width: 576px) {
   i{
     font-size: 1rem;
@@ -79,8 +122,12 @@ h4{
   .fs-6 {
     font-size: 1.2rem !important; 
   }
+  .fs-7{
+    font-size: 1.2rem !important; 
+  }
   h1, .h1 {
-    font-size: 1.6rem;
+    font-size: 3.45rem;
+    min-width: 90vw;
   }
   h2 {
     font-size: 1.4rem;
@@ -100,8 +147,15 @@ h4{
   .fs-6 {
     font-size: 1.5rem !important;
   }
+  .fs-7{
+    font-size: 1.6rem !important; 
+  }
+  .foto{
+    min-height: 100%;
+    height: 100%;
+  }
   h1, .h1 {
-    font-size: 2rem;
+    font-size: 3.35rem;
   }
   h2 {
     font-size: 1.8rem;
@@ -121,8 +175,17 @@ h4{
   .fs-6 {
     font-size: 1.9rem !important; 
   }
+  .fs-7{
+    font-size: 2rem !important; 
+  }
+  .foto{
+    min-height: 38vh;
+  }
+  .apresentacao{
+    min-height: 50vh;
+  }
   h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 6.4vh;
   }
   h2 {
     font-size: 2.3em;
@@ -143,9 +206,19 @@ h4{
   .fs-6 {
     font-size: 2rem !important; 
   }
-  
+  .fs-7{
+    font-size: 2.1rem !important; 
+  }
+  .foto{
+    min-height: 50vh;
+    height: 100%;
+  }
+  .apresentacao{
+    min-height: 50vh;
+  }
+ 
   h1, .h1 {
-    font-size: 4.3rem;
+    font-size: 6.5rem;
   }
   h2 {
     font-size: 3.3rem;
@@ -166,8 +239,18 @@ h4{
   .fs-6 {
     font-size: 2.1rem !important;
   }
+  .fs-7{
+    font-size: 2.2rem !important; 
+  }
+  .foto{
+    min-height: 50vh;
+    height: 100%;
+  }
+  .apresentacao{
+    min-height: 50vh;
+  }
   h1, .h1 {
-    font-size: 5.3rem;
+    font-size: 7.3rem;
   }
   h2 {
     font-size: 3.9rem;
@@ -177,18 +260,6 @@ h4{
   }
   h4 {
     font-size: 3.3rem;
-  }
-}
-
-@media (min-height: 1080px) {
-  .foto{
-    max-height: 650px !important;
-  }
-}
-
-@media (min-height: 1440px) {
-  .foto{
-    max-height: 900px !important;
   }
 }
 
@@ -233,6 +304,7 @@ body.light-mode {
   section:nth-child(even) {
     background-color: var(--cor-azul-transparente);
   }
+
   .text-light {
     color: var(--cor-cinza-dark) !important;
   }
@@ -306,9 +378,10 @@ body.light-mode {
   color: var(--cor-verde);
 }
 
+
 html, body {
   background-color: var(--cor-preto);
-  font-family: 'Original Surfer', sans-serif;
+  font-family: 'Arvo', sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;  
 }
