@@ -17,10 +17,11 @@
             <a class="navbar-brand fs-7 text-white fw-bold col-2 col-lg-2 col-xl-2 col-xxl-2" href="#daviborges">Davi Borges<span class="text-secondary">.</span></a>
             <div>
 
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <i class="bi bi-menu-button text-white"></i>
-              </button>
-              <button class="nav-item btn text-secondary btn-desktop" id="toggleTheme"><i class="bi bi-sun"></i></button>
+              </a>
+
+              <a class="nav-item btn text-secondary btn-desktop" id="toggleTheme"><i class="bi bi-sun"></i></a>
               
             </div>
             
@@ -33,7 +34,7 @@
                 <a href="#projetos" class="nav-link btn text-white col-2">Projetos</a>
                 <a href="#contato" class="nav-link btn text-white col-2">Contato</a>
               </div>
-              <button class="nav-item btn text-secondary btn-mobile" id="toggleTheme"><i class="bi bi-sun"></i></button>
+              <a class="nav-item btn text-secondary btn-mobile" id="toggleTheme"><i class="bi bi-sun"></i></a>
 
             </div>
 
@@ -50,16 +51,16 @@
           <section id="daviborges" class=" align-items-center w-100">
             
             <!-- Layout -->
-            <div class="row d-flex align-items-xl-center align-items-center w-100">
+            <div class="layout row">
 
               <!-- Foto -->
-              <div class="apresentacao col-4 col-md-3 col-xxl-5 col-xl-4 col-sm-4 d-flex align-items-center justify-content-center image-column" >
+              <div class="img-apresentacao col-4 col-md-3 col-xxl-5 col-xl-4 col-sm-4" >
                 <img src="/assets/davi.jpg"
                   class="img-fluid rounded-pill foto"/>
               </div>
 
               <!-- Apresentacao -->
-              <div class="col-12 col-md-9 col-xl-8 col-sm-7 col-xxl-7 text-start align-items-center justify-content-center">
+              <div class="card-apresentacao col-12 col-md-9 col-xl-8 col-sm-7 col-xxl-7">
                 <!-- Texto -->
                 <h1 class="fw-semibold text-light">
                   Olá<span class="text-warning">, </span> eu sou <br />
@@ -73,7 +74,7 @@
               </div>
               <!-- Fim Apresentacao -->
               <!-- Botoes Desktop -->
-              <div class="row justify-content-end row-buttons">
+              <div class="row row-buttons">
                 <div class="col text-end">
                   <a
                     class="btn btn-warning"
@@ -93,20 +94,20 @@
               </div>
               <!-- Fim Botoes Desktop -->
               <!-- Botoes Mobile -->
-              <div class="fixed-buttons-container d-flex justify-content-end">
+              <div class="fixed-buttons-container">
                 <a
-                  class="fs-6 fixed-btn btn btn-warning"
+                  class="btn btn-warning"
                   href="https://www.linkedin.com/in/davi-borges-felipe/"
                   target="_blank"
                 >
-                  <i class="fs-6 bi bi-linkedin text-warning"></i>
+                  <i class="bi bi-linkedin text-warning"></i>
                 </a>
                 <a
-                  class="fixed-btn btn btn-warning"
+                  class="btn btn-warning"
                   href="https://github.com/daviborgesfelipe"
                   target="_blank"
                 >
-                  <i class="fs-6 bi bi-github text-warning"></i>
+                  <i class="bi bi-github text-warning"></i>
                 </a>
               </div>
               <!-- Fim Botoes Mobile -->
@@ -456,20 +457,32 @@
             <br />
 
             <!-- Botoes Redes Sociais -->
-            <div class="col d-flex justify-content-around gap-3 pb-5">
-              <a
-                class="btn btn-warning w-100 text-center"
-                data-bs-placement="bottom-end"
-                href="https://github.com/daviborgesfelipe/e-AgendaMedica.Server"
-                target="_blank"
-              ><i class="bi bi-github text-white shadow-lg"></i> Back-end</a>
-            
-              <a
-                class="btn btn-warning w-100 text-center"
-                data-bs-placement="bottom-end"
-                href="https://github.com/daviborgesfelipe/e-agenda-medica-client"
-                target="_blank"
-              ><i class="bi bi-github text-white shadow-lg"></i> Front-end</a>
+            <div class="col d-flex justify-content-around gap-5 mt-xl-3 pb-5">
+              
+              <div class="col-2"></div>
+              <div class="col-3">
+                <a
+                  class="btn btn-warning w-100 text-center"
+                  data-bs-placement="bottom-end"
+                  href="https://github.com/daviborgesfelipe/e-AgendaMedica.Server"
+                  target="_blank"
+                ><i class="bi bi-github text-white shadow-lg"></i> Back-end</a>
+              </div>
+              
+              <div class="col-2"></div>
+
+              <div class="col-3">
+                <a
+                  class="btn btn-warning w-100 text-center"
+                  data-bs-placement="bottom-end"
+                  href="https://github.com/daviborgesfelipe/e-agenda-medica-client"
+                  target="_blank"
+                  
+                ><i class="bi bi-github text-white shadow-lg"></i> Front-end</a>
+              </div>
+              <div class="col-2"></div>
+
+              
             </div>
             <!-- Fim Botoes Redes Sociais -->
 
